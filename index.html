@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR  ">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Orfanato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Meta tag para responsividade -->
+    <title>Orfanato Santa Rosa | Home Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header> 
-            <h2> Orfanato Santa Rosa </h2>
-            <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="cadastro.html">Cadastro</a></li>
-                        <li><a href="projetos.html">Projetos</a></li>
-                    </ul>
-            </nav>
+        <nav>
+           <h2> Orfanato Santa Rosa </h2>
+            <div class="logo">&#128153; Voluntarie-se &#128153;</div>
+            <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+            <ul id="navMenu"> <!-- Menu de navegação -->
+                <li><a href="index.html" class="toggleMenu()"&blk12;Início&blk12;</a></li>
+                <li><a href="cadastro.html">&blk12;Cadastro&blk12;</a></li>
+                <li><a href="projetos.html">&blk12;Projetos&blk12;</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Quem somos</h2>
+    <!-- Seção Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Junte-se a nós!</h1>
+                <p>Faça a diferença na vida de uma criança hoje mesmo.</p>
+                <a href="cadastro.html" class="btn-primary">Cadastre-se como Voluntário</a>
+            </div>
+        </section>
+<!-- Quem somos-->
+
+        <section class="about">
+        <h2>Quem somos</h2>
             <p>Somos um orfanato dedicado a cuidar e apoiar crianças e adolescentes em situação de vulnerabilidade. Nosso objetivo é proporcionar um ambiente seguro, acolhedor e estimulante, onde cada criança possa desenvolver seu potencial máximo e construir um futuro promissor.</p>
             <img src="img/orfanato.jpg" alt="Imagem do Orfanato Santa Rosa" width="500">
-        </section>           
-        <section>
-            <h2>Nossos Valores</h2>
-            <ul>
-                <li>Amor e Cuidado: Acreditamos que cada criança merece ser amada e cuidada com dedicação e carinho.</li>
-                <li>Educação: Valorizamos a educação como ferramenta fundamental para o desenvolvimento pessoal e social.</li>
-                <li>Respeito: Promovemos um ambiente onde o respeito mútuo é essencial para a convivência harmoniosa.</li>
-                <li>Inclusão: Trabalhamos para garantir que todas as crianças tenham acesso às mesmas oportunidades, independentemente de suas origens ou circunstâncias.</li>
-            </ul>
-                </section>
-                <section>
-                    <h2>Contato</h2>
-                    <p>Endereço: Rua das Flores, 123 - Cidade Exemplo</p>
-                    <p>Telefone: (11) 1234-5678</p>
-                    <p>Email: SantaRosa@Orfanato.com.br</p>
-                </section>
-    </main>
+        
+        </section>
+  
+    
     <footer>
         <p>&copy; 2024 Orfanato Santa Rosa. Todos os direitos reservados.</p>
+        <p>Feito para transformar vidas.</p>   
     </footer>
+
+    <script src="script.js"></script>
     </body>
 </html>
