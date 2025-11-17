@@ -6,7 +6,7 @@ function toggleMenu() {
 }
 
 /*scroll leve*/
-fuction scrollHeader(sectionId) {
+function scrollHeader(sectionId) {
     const section = document.getElementById(sectionId);
 
     if(!section) return;
@@ -57,10 +57,12 @@ exibirVoluntarios();
 
 function exibirVoluntarios() {
     const voluntarios = JSON.parse(localStorage.getItem('voluntarios')) || [];
-    const listaVoluntarios = document.getElementById('tabelaVoluntarios');
+    const tabelaContainer = document.getElementById('tabelaVoluntarios');
     
-    if(!tabelaContainer) return;
+    if(!tabelaContainer) return
+
     if(voluntarios.length === 0) {
         tabelaContainer.innerHTML = '<p>Nenhum voluntário cadastrado ainda.</p>';
         return;
     }
+}
