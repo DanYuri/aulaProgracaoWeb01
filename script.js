@@ -37,7 +37,7 @@ function handleSubmit(event) {
         areainteresse: form.areainteresse.value,
         experiencia: form.experiencia.value,
         motivacao: form.motivacao.value,
-        dataCadastro: new Date().toLocalDateString()
+        dataCadastro: new Date().toLocaleDateString()
     }
 let voluntarios = JSON.parse(localStorage.getItem('voluntarios')) || [];
 voluntarios.push(formData);
@@ -45,7 +45,7 @@ localStorage.setItem('voluntarios', JSON.stringify(voluntarios));
 
 const successMessage = document.getElementById('successMessage');
 successMessage.classList.add('show');
-successMessage.scrossIntoView({behavior: 'smooth', block: 'center'  });
+successMessage.scrollIntoView({behavior: 'smooth', block: 'center'  });
 
 setTimeout(() => form.reset(), 2000);
 setTimeout(() => successMessage.classList.remove('show'), 3000);
